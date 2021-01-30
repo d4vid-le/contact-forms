@@ -10,7 +10,8 @@
 				rules: {
 					name: "required",
 					subject: "required",
-					email: {
+					email: "required",
+					{
 						required: true,
 						email: true
 					},
