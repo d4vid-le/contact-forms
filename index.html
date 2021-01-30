@@ -18,8 +18,7 @@
 		<div class="container">
 
 			<!-- Netlify Contact Form Starts -->
-			<form name="contactform" action="mailto:someone@d4vid.tif@gmail.com" method="post" enctype="text/plain" data-netlify="true" netlify><input type="hidden" name="form-name" value="contact">
-			
+			<form name="contactform" data-netlify="true" netlify><input type="hidden" name="contactForm" value="contact">
 			<!-- Netlify Contact form input ends-->
 			
 				<div class="row justify-content-center">
@@ -62,11 +61,20 @@
 						          </div>
 										</div>
 									</div>
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+							<!-- Netlify input values-->
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm" data-netlify="true" netlify> 
 										<div class="row">
-											<div class="col-md-12">
+											<div class="col-md-6">
 												<div class="form-group">
-													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+													<input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+												
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Last Name">
+												</div></div>
+												<div class="col-md-6"><div class="form-group">
+													<input type="text" class="form-control" name="number" id="number" placeholder="Telephone">
+												</div>
+
 												</div>
 											</div>
 											<div class="col-md-12"> 
@@ -93,7 +101,7 @@
 										</div>
 									</form>
 									<div class="w-100 social-media mt-5">
-										<h3>Follow us here</h3>
+										<h3>contact forms</h3>
 										<p>
 											<a href="#">Facebook</a>
 											<a href="#">Twitter</a>
